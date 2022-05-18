@@ -7,7 +7,7 @@ RUN mkdir /opt/tomcat/
 WORKDIR /opt/tomcat
 RUN curl -O https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.63/bin/apache-tomcat-9.0.63.tar.gz
 RUN tar xvzf apache-tomcat-9.0.63.tar.gz
-RUN mv apache-tomcat-8.5.40/* /opt/tomcat/.
+RUN mv apache-tomcat-9.0.63/ /opt/tomcat/.
 RUN yum -y install java
 RUN yum update -y && yum install curl -y
 RUN java -version
