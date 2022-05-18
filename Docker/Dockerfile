@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM centos
 
 MAINTAINER Chinmaya.Barik@encora.com
 
@@ -8,8 +8,8 @@ WORKDIR /opt/tomcat
 RUN curl -O https://www-eu.apache.org/dist/tomcat/tomcat-8/v8.5.40/bin/apache-tomcat-8.5.40.tar.gz
 RUN tar xvfz apache*.tar.gz
 RUN mv apache-tomcat-8.5.40/* /opt/tomcat/.
-RUN apt-get -y install java
-RUN apt-get update -y && apt-get install curl -y
+RUN yum -y install java
+RUN yum update -y && yum install curl -y
 RUN java -version
 
 WORKDIR /opt/tomcat/webapps
