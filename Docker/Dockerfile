@@ -21,4 +21,4 @@ RUN curl -O -L http://52.66.239.247:8082/artifactory/artifactory-build-info/arti
 
 EXPOSE 8080
 
-CMD ["/opt/tomcat/bin/catalina.sh", "run"]
+CMD ["/opt/tomcat/apache-tomcat-9/bin/catalina.sh", "run"]
