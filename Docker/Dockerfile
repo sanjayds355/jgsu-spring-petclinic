@@ -17,7 +17,7 @@ RUN yum update -y && yum install curl -y
 RUN java -version
 
 WORKDIR /opt/tomcat/webapps
-RUN curl -O -L http://13.232.246.230:8082/artifactory/artifactory-build-info/artifactory-test-job/4-1652437135564.json
+RUN curl -O -L http://52.66.239.247:8082/artifactory/artifactory-build-info/artifactory-test-job/4-1652437135564.json
 
 EXPOSE 8080
 
